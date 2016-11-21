@@ -20,7 +20,7 @@ Be sure to review their [terms of use](https://www.brooklynmuseum.org/opencollec
 
 Once you have your API key, clone this repo using a terminal:
 ```
-git clone https://github.com/Pyython/brooklyn-museum-mediachain
+$ git clone https://github.com/Pyython/brooklyn-museum-mediachain
 ```
 
 Find the /config directory in the repo you just cloned and open example_config.py in a text editor.  
