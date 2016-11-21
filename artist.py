@@ -14,8 +14,10 @@ def main():
     while(len(artists) < num_artists):
         payload = {'offset': len(artists), 'limit': 35}
         r = requests.get(url, headers=headers, params=payload)
+        print "Fetching: {} records".format(len(r.json()['data']))
         for item in r.json()['data']:
             artists.append(item)
+    print "Total records: {}".format(len(artists))
     with open('json/artists.json', 'wb') as f:
         json.dump(artists, f)
 
