@@ -45,7 +45,3 @@ Thumbs.db
 # Config File #
 ###############
 config.py
-
-# Data Files #
-##############
-data/

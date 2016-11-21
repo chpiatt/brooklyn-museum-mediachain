@@ -18,7 +18,10 @@ Before you begin, you must apply for an api key [via their web form](https://www
 
 Be sure to review their [terms of use](https://www.brooklynmuseum.org/opencollection/api/docs/termsofuse) before starting.
 
-Once you have your API key, clone the repo [NEED LINK]
+Once you have your API key, clone this repo using a terminal:
+```
+git clone https://github.com/Pyython/brooklyn-museum-mediachain
+```
 
 Find the /config directory in the repo you just cloned and open example_config.py in a text editor.  
 Replace [INSERT YOUR API KEY HERE] with your api key and save the file as config.py in the same folder.
@@ -39,6 +42,8 @@ In your terminal, cd into the data directory and run the following command:
 ```
 $ jq -c '.[]' artists.json > artists.ndjson
 ```
+
+Examples of these files are included in the data directory for your reference.
 
 ## Generating a schema
 Follow the instructions to install [schema-guru](https://github.com/mediachain/aleph/blob/master/docs/schema-generation.md), a tool that automatically derives a JSON schema from a set of JSON instances. The [schema generation guide](https://github.com/mediachain/aleph/blob/master/docs/schema-generation.md) explains the naming conventions and the parameters we're using:
